@@ -9,10 +9,16 @@
 <body>
     <% dishes.forEach(record => { %>
         <h1><%= record.name %> </h1>
+        <h2><%= record.foodDescription %> </h2>
+        <h3>Price: <%= record.price %> </h3>
+
         <%if(record.imageURL){%>
-            <img src="<%= record.imageURL %>:"  alt="">
-        }
+            <img src="<%= record.imageURL %>:" height="200px" alt="">
+        <%}else{%>
+            <img src="defaultpic go find one" alt="">
+        <%}%> 
     <% }) %>
+
 
 </body>
 </html>
