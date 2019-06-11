@@ -11,4 +11,5 @@ let config = {
 }
 let pgp = require('pg-promise')(initOptions);
 let db = pgp(config);
+
 module.exports = db;
